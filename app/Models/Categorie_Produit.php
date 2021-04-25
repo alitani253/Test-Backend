@@ -6,7 +6,7 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int $id
+ * @property integer $id
  * @property string $libelle
  * @property string $code
  * @property string $created_at
@@ -16,4 +16,9 @@ class Categorie_Produit extends Model
 {
     use HasFactory;
     protected $fillable = ['libelle', 'code','created_at', 'updated_at'];
+
+    public function produits()
+    {
+        return $this->hasMany(Produit::class);
+    }
 }

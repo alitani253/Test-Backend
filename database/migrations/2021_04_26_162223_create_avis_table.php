@@ -14,10 +14,19 @@ class CreateAvisTable extends Migration
     public function up()
     {
         Schema::create('avis', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id')->autoIncrement();
+            $table->unsignedBigInteger('id_client');
+            $table->unsignedBigInteger('id_livraison');
+            $table->string('description');
+            $table->string('note');
             $table->timestamps();
+            $table->foreign('id_client')->references('id')->on('users');
+            $table->foreign('id_livraison')->references('id')->on('livraisons');
+
+
         });
     }
+    //protected $fillable = ['description', 'note','created_at', 'updated_at'];
 
     /**
      * Reverse the migrations.

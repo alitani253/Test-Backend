@@ -14,16 +14,33 @@ class CreateUsersTable extends Migration
     public function up()
     {
         Schema::create('users', function (Blueprint $table) {
-            $table->id();
-            $table->string('name');
+            $table->unsignedBigInteger('id')->autoIncrement();
+            $table->string('nom');
+            $table->string('prenom')->nullable();
+            $table->string('adress');
+            $table->string('tel')->unique();
             $table->string('email')->unique();
             $table->timestamp('email_verified_at')->nullable();
             $table->string('password');
+            $table->string('role');
+            $table->unsignedBigInteger('created_by')->nullable();
             $table->rememberToken();
             $table->timestamps();
         });
     }
 
+
+    /*
+    protected $fillable = [
+        'nom',
+        '',
+        'tel',
+        '',
+        'adress',
+        'password',
+        'created_at',
+        'updated_at',
+    ];*/
     /**
      * Reverse the migrations.
      *

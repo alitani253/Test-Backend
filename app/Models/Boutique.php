@@ -5,7 +5,9 @@ namespace App\Models;
 use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 /**
- *  @property int $id
+ *  @property integer $id
+ * @property integer $id_boutiquier
+ * @property integer $id_categorie_Boutique
  *  @property string $nom
  * @property string $email
  * @property string $adresse
@@ -19,5 +21,14 @@ use Illuminate\Database\Eloquent\Model;
 class Boutique extends Model
 {
     use HasFactory;
-    protected $fillable = ['nom','email','adresse','tva','longitude','attributes','created_at', 'updated_at'];
+    protected $fillable = ['id_categorie_Boutique','id_boutiquier','nom','email','adresse','tva','longitude','attributes','created_at', 'updated_at'];
+    public function Categorie_Produit()
+    {
+        return $this->belongsTo(Categorie_Boutique::class);
+    }
+    public function Boutiquier()
+    {
+        return $this->belongsTo(User::class);
+    }
+
 }

@@ -14,8 +14,16 @@ class CreateProduitBoutiquesTable extends Migration
     public function up()
     {
         Schema::create('produit__boutiques', function (Blueprint $table) {
-            $table->id();
+            $table->unsignedBigInteger('id')->autoIncrement();
+            $table->unsignedBigInteger('id_produit');
+            $table->unsignedBigInteger('id_boutique');
+            $table->string('libelle');
+            $table->string('code');
             $table->timestamps();
+            $table->foreign('id_boutique')->references('id')->on('boutiques');
+            $table->foreign('id_produit')->references('id')->on('produits');
+
+
         });
     }
 

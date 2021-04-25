@@ -6,7 +6,9 @@ use Illuminate\Database\Eloquent\Factories\HasFactory;
 use Illuminate\Database\Eloquent\Model;
 
 /**
- * @property int $id
+ * @property integer $id
+ * @property integer $id_client
+ * @property integer $id_livraison
  * @property string $description
  * @property int $note
  * @property string $created_at
@@ -16,5 +18,13 @@ use Illuminate\Database\Eloquent\Model;
 class Avis extends Model
 {
     use HasFactory;
-    protected $fillable = ['description', 'note','created_at', 'updated_at'];
+    protected $fillable = ['id_client', 'id_livraison','description','note','created_at', 'updated_at'];
+    public function client()
+    {
+        return $this->belongsTo(User::class);
+    }
+    public function livraison()
+    {
+        return $this->belongsTo(Livraison::class);
+    }
 }

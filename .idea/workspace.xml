@@ -1,15 +1,48 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="BranchesTreeState">
+    <expand>
+      <path>
+        <item name="ROOT" type="e8cecc67:BranchNodeDescriptor" />
+        <item name="LOCAL_ROOT" type="e8cecc67:BranchNodeDescriptor" />
+      </path>
+    </expand>
+    <select />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="af261c32-6af8-4ada-a00b-05680fbb019b" name="Default Changelist" comment="" />
+    <list default="true" id="af261c32-6af8-4ada-a00b-05680fbb019b" name="Default Changelist" comment="">
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Avis.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Avis.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Boutique.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Boutique.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Categorie_Boutique.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Categorie_Boutique.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Categorie_Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Categorie_Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Detaille_Commande.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Detaille_Commande.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Produit.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Produit.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/Produit_Boutique.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/Produit_Boutique.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/app/Models/User.php" beforeDir="false" afterPath="$PROJECT_DIR$/app/Models/User.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/config/database.php" beforeDir="false" afterPath="$PROJECT_DIR$/config/database.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2014_10_12_000000_create_users_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_161229_create_produits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_23_161229_create_produits_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162011_create_categorie__produits_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_162011_create_categorie__produits_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162040_create_boutiques_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_23_162040_create_boutiques_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162105_create_categorie__boutiques_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_22_162105_create_categorie__boutiques_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162123_create_produit__boutiques_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_23_162123_create_produit__boutiques_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162149_create_commandes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_23_162149_create_commandes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162206_create_detaille__commandes_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_23_162206_create_detaille__commandes_table.php" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/database/migrations/2021_04_23_162223_create_avis_table.php" beforeDir="false" afterPath="$PROJECT_DIR$/database/migrations/2021_04_26_162223_create_avis_table.php" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ComposerSettings" synchronizationState="SYNCHRONIZE">
+  <component name="ComposerSettings" doNotAsk="true" synchronizationState="SYNCHRONIZE">
     <pharConfigPath>$PROJECT_DIR$/composer.json</pharConfigPath>
     <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration">
     <include_path>
@@ -121,6 +154,7 @@
     </include_path>
   </component>
   <component name="ProjectId" id="1rZqpUVL5kvDzKXxLZ5Z8YKTnOg" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -148,13 +182,29 @@
       <updated>1619194142908</updated>
       <workItem from="1619194144018" duration="47000" />
       <workItem from="1619194296291" duration="2640000" />
+      <workItem from="1619204548759" duration="21789000" />
     </task>
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
     <option name="version" value="3" />
   </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
+    <state x="390" y="0" width="585" height="728" key="find.popup" timestamp="1619368768820">
+      <screen x="0" y="0" width="1366" height="728" />
+    </state>
+    <state x="390" y="0" width="585" height="728" key="find.popup/0.0.1366.728@0.0.1366.728" timestamp="1619368768820" />
     <state x="353" y="49" width="672" height="678" key="search.everywhere.popup" timestamp="1619203489352">
       <screen x="0" y="0" width="1366" height="728" />
     </state>
