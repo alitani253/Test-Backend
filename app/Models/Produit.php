@@ -7,6 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 
 /**
  *  @property integer $id
+ *  @property integer $id_categorie__produits
  *  @property string $libelle
  * @property string $code_barre
  * @property string $image
@@ -18,7 +19,7 @@ use Illuminate\Database\Eloquent\Model;
 class Produit extends Model
 {
     use HasFactory;
-    protected $fillable = ['libelle', 'code_barre','image','qr_code','created_at', 'updated_at'];
+        protected $fillable = ['libelle', 'code_barre','image','qr_code','created_at', 'updated_at','id_categorie__produits'];
 
     public function Categorie_Produit()
     {

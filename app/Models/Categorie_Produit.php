@@ -21,4 +21,7 @@ class Categorie_Produit extends Model
     {
         return $this->hasMany(Produit::class);
     }
+
+
+
 }

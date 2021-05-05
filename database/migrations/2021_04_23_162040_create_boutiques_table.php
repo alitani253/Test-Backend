@@ -16,7 +16,7 @@ class CreateBoutiquesTable extends Migration
      //   '','',
         Schema::create('boutiques', function (Blueprint $table) {
             $table->unsignedBigInteger('id')->autoIncrement();
-            $table->unsignedBigInteger('id_categorie_Boutique');
+            $table->unsignedBigInteger('id_categorie_boutique');
             $table->unsignedBigInteger('id_boutiquier');
             $table->string('nom');
             $table->string('email');
@@ -25,7 +25,7 @@ class CreateBoutiquesTable extends Migration
             $table->string('longitude');
             $table->string('attributes');
             $table->timestamps();
-            $table->foreign('id_categorie_Boutique')->references('id')->on('categorie__boutiques');
+            $table->foreign('id_categorie_boutique')->references('id')->on('categorie__boutiques');
             $table->foreign('id_boutiquier')->references('id')->on('users');
 
         });

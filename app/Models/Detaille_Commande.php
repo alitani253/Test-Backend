@@ -26,6 +26,4 @@ class Detaille_Commande extends Model
     {
         return $this->belongsTo(Produit_Boutique::class);
     }
-
-
 }

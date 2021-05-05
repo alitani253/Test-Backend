@@ -21,7 +21,7 @@ class CreateAvisTable extends Migration
             $table->string('note');
             $table->timestamps();
             $table->foreign('id_client')->references('id')->on('users');
-            $table->foreign('id_livraison')->references('id')->on('livraisons');
+              $table->foreign('id_livraison')->references('id')->on('livraisons');
 
 
         });
